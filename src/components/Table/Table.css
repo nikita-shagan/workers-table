@@ -1,0 +1,93 @@
+.table {
+    border-radius: 12px;
+    border: 1px solid var(--Middle-Gray-Blue, #B8C4DB);
+}
+
+.table__row {
+    border-bottom: 1px solid var(--Middle-Gray-Blue, #B8C4DB);
+    display: flex;
+}
+
+.table__row_gray {
+    background-color: var(--Gray);
+}
+
+.table__row:last-of-type {
+    border: none;
+    border-radius: 0 0 12px 12px;
+}
+
+.table__row:first-of-type {
+    border-radius: 12px 12px 0 0;
+}
+
+.table__row-head {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-right: 1px solid var(--Middle-Gray-Blue, #B8C4DB);
+    cursor: pointer;
+}
+
+.table__row-head_outline:hover {
+    outline: 2px solid #F0303F;
+    border-radius: 2px;
+}
+
+.table__row-head-text {
+    max-width: 70%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-overflow: ellipsis;
+}
+
+.table-row-body {
+    display: grid;
+    flex-grow: 1;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    grid-template-rows: 35px;
+}
+
+.table__row-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--Middle-Gray-Blue, #B8C4DB);
+    cursor: pointer;
+}
+
+.table__row-cell_outline:hover {
+    outline: 2px solid #F0303F;
+    border-radius: 2px;
+}
+
+.table__row-cell:last-of-type {
+    border: none;
+}
+
+.table__add-worker-input {
+    width: 50%;
+    margin-right: 5px;
+}
+
+.table__add-worker-btn {
+    background-color: transparent;
+    height: 80%;
+    cursor: pointer;
+    border: none;
+    color: #308ADD;
+}
+
+.table__delete-worker-btn {
+    background-color: transparent;
+    height: 80%;
+    cursor: pointer;
+    border: none;
+    color: #F0303F;
+    margin-left: 10px;
+}

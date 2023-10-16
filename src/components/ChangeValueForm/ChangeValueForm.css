@@ -1,0 +1,7 @@
+.change-value-form {
+    width: 220px;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
